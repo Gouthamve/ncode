@@ -1,0 +1,172 @@
+<!--
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>N-Code | Nvision </h3>
+
+      <div class="tabbable-panel">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs nav-justified" id="tabs">
+            <li class="active">
+              <a href="#tab_default_1" data-toggle="tab">
+							Introduction</a>
+            </li>
+            <li>
+              <a href="#tab_default_2" data-toggle="tab">
+							Rules and scoring </a>
+            </li>
+            <li>
+              <a href="#tab_default_3" data-toggle="tab">
+							Contact </a>
+            </li>
+            <li>
+              <a href="#tab_default_4" data-toggle="tab" id="register">
+								Register</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab_default_1">
+              <h3>
+								Introduction
+							</h3>
+              <p>
+                <strong>Nvision – IIT Hyderabad presents online programming competition.</strong>
+                <br>
+                <br> Get ready to test / practice your competitive algorithmic skills by competing against other code geeks and win amazing prizes!
+                <br>
+                <br> P.S: All are cordially invited to <strong>3hrs</strong> of enjoyment and fun.
+                <br>
+                <br>
+                <strong>Duration</strong>: 3 hours
+                <br>
+                <strong>Start time</strong>: 6:00 pm, Sunday on 5-07-2015
+                <br>
+                <strong>End time</strong>: 9:00 pm, Sunday on 5-07-2015
+              </p>
+              <p>
+                <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+									Register Now
+								</a>
+              </p>
+            </div>
+            <div class="tab-pane" id="tab_default_2">
+              <h3>
+								Rules and scoring
+							</h3>
+              <p>
+                <ul>
+                  <li>Any case of code plagiarism will result in disqualification from the contest.</li>
+                  <li>Input and Output should be strictly in the given format</li>
+                  <li>Problems will be judged at the end of the contest.</li>
+                  <li>The name of code should be problem code number</li>
+                  <li>Participants should submit a zip file (containing your work) at the end of contest, i.e. just after or within 3hrs from the start of event.</li>
+                  <li>Participants are requested to mail the zip file to both organisers, with subject of the e-mail as n-code.</li>
+                  <li>Participant can submit as many number of times he/she wants. As, only last submitted file will be evaluated</li>
+                  <li>Each problem statement has a pre-defined score. And all are of same marks.</li>
+                  <li>Each submission for each problem will be scored, based on number of testcases it passes.</li>
+                  <li>Users are ranked according to the maximum no. of points.</li>
+                  <li><strong>Ties will be broken by the total time for each user in ascending order of time</strong>
+                  </li>
+                  <li>In case of any discrepancies organisers decision will be final</li>
+                  <li>Participants can submit their code in <strong>C, C++ and Java.</strong>
+                  </li>
+                </ul>
+              </p>
+              <p>
+                <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+									Register Now
+								</a>
+              </p>
+            </div>
+            <div class="tab-pane" id="tab_default_3">
+              <h3>
+								Organisers
+							</h3>
+              <p>
+                <div class="col-lg-5 col-lg-offset-1">
+                  <strong>Ali Hyder</strong>
+                  <br>
+                  <br> ee13b1041@iith.ac.in
+                  <br>
+                  <br> +91-8297617063
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+                <div class="col-lg-6">
+                  <strong>Sagar Kaniche</strong>
+                  <br>
+                  <br> cs13b1017@iith.ac.in
+                  <br>
+                  <br> +91-9581116530
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </p>
+              <p>
+                <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+									Register Now
+								</a>
+              </p>
+            </div>
+            <div class="tab-pane" id="tab_default_4">
+              {{#if user}}
+              <h3>
+						Welcome <br><br>
+					</h3> {{#if user.facebook.displayName}}
+              <h4>Hi, {{user.facebook.displayName}}</h4> <br>
+              <p>
+                Your nvisionId: {{user.nvisionId}}
+              </p>
+              {{else}}
+              <h4>Hi, {{user.google.displayName}}</h4>
+              <p>
+                Your nvisionId: {{user.nvisionId}}
+              </p>
+              {{/if}} {{else}}
+              <h3>
+								Register
+							</h3>
+              <div class="col-lg-6 col-lg-offset-3">
+                <a class="btn btn-lg btn-block btn-social btn-google" href="/auth/google">
+                  <i class="fa fa-google"></i> Sign in with Google
+                </a>
+                <br>
+                <a class="btn btn-lg btn-block btn-social btn-facebook" href="/auth/facebook">
+                  <i class="fa fa-facebook"></i> Sign in with Facebook
+                </a>
+              </div>
+              {{/if}}
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  function registerTab() {
+    $('#register')
+      .click();
+  }
+</script>
+<br>
+<br>
+<br>
+<br>
