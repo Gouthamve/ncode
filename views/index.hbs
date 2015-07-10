@@ -26,7 +26,12 @@ Licensed under MIT
             </li>
             <li>
               <a href="#tab_default_4" data-toggle="tab" id="register">
-								Register</a>
+                {{#if user}}
+                  Submit
+                {{else}}
+                  Register
+                {{/if}}
+                </a>
             </li>
           </ul>
           <div class="tab-content">
@@ -50,11 +55,19 @@ Licensed under MIT
                 <br>
                 <strong>End time</strong>: 9:00 pm, Saturday on 11-07-2015
               </p>
-              <p>
-                <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
-									Register Now
-								</a>
-              </p>
+              {{#if user}}
+                <p>
+                  <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+  									Submit Now
+  								</a>
+                </p>
+              {{else}}
+                <p>
+                  <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+  									Register Now
+  								</a>
+                </p>
+              {{/if}}
             </div>
             <div class="tab-pane" id="tab_default_2">
               <h3>
@@ -79,11 +92,19 @@ Licensed under MIT
                   </li>
                 </ul>
               </p>
-              <p>
-                <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
-									Register Now
-								</a>
-              </p>
+              {{#if user}}
+                <p>
+                  <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+  									Submit Now
+  								</a>
+                </p>
+              {{else}}
+                <p>
+                  <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+  									Register Now
+  								</a>
+                </p>
+              {{/if}}
             </div>
             <div class="tab-pane" id="tab_default_3">
               <h3>
@@ -113,11 +134,19 @@ Licensed under MIT
                   <br>
                 </div>
               </p>
-              <p>
-                <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
-									Register Now
-								</a>
-              </p>
+              {{#if user}}
+                <p>
+                  <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+  									Submit Now
+  								</a>
+                </p>
+              {{else}}
+                <p>
+                  <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
+  									Register Now
+  								</a>
+                </p>
+              {{/if}}
             </div>
             <div class="tab-pane" id="tab_default_4">
               {{#if user}}
