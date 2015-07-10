@@ -56,6 +56,13 @@ Licensed under MIT
                 <strong>End time</strong>: 9:00 pm, Saturday on 11-07-2015
               </p>
               {{#if user}}
+              <br>
+                <p>
+                  <a class="btn-lg btn-primary" href="problemstatements.pdf" target="_blank">
+                    Problem Statement
+                  </a>
+                </p>
+                <br>
                 <p>
                   <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
   									Submit Now
@@ -93,6 +100,14 @@ Licensed under MIT
                 </ul>
               </p>
               {{#if user}}
+              <br>
+              <br>
+                <p>
+                  <a class="btn-lg btn-primary" href="problemstatements.pdf" target="_blank">
+                    Problem Statement
+                  </a>
+                </p>
+                <br>
                 <p>
                   <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
   									Submit Now
@@ -135,6 +150,14 @@ Licensed under MIT
                 </div>
               </p>
               {{#if user}}
+              <br>
+              <br>
+                <p>
+                  <a class="btn-lg btn-primary" href="problemstatements.pdf" target="_blank">
+                    Problem Statement
+                  </a>
+                </p>
+                <br>
                 <p>
                   <a class="btn btn-success" data-toggle="tab" onclick="registerTab()">
   									Submit Now
@@ -163,7 +186,22 @@ Licensed under MIT
               <p>
                 Your ηvisionId: {{user.nvisionId}}
               </p>
-              {{/if}} {{else}}
+              {{/if}}
+
+              Please send an email to <strong>ee13b1041@iith.ac.in</strong> AND <strong>cs13b1017@iith.ac.in</strong> with the solution file.
+              <br>
+              <br>
+              Please make sure you have the SUBJECT as <strong>"ncode: {{user.nvisionId}}"</strong> and have information on how to run the code in the body
+              <br>
+              <br>
+              For Gmail: <a href="https://mail.google.com/mail/u/0/?su=ncode: {{user.nvisionId}}&view=cm&fs=1&tf=1&to=ee13b1041@iith.ac.in,cs13b1017@iith.ac.in&body=How to run the code">Click Here</a>
+              <br><br><br>
+                <p>
+                  <a class="btn-lg btn-primary" href="problemstatements.pdf" target="_blank">
+                    Problem Statement
+                  </a>
+                </p>
+              {{else}}
               <h3>
 								Register
 							</h3>
