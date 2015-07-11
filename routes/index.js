@@ -9,10 +9,7 @@ var mongoose = require('mongoose');
 router.get('/', function(req, res, next) {
   res.render('index', {
     title: 'Nvision | N-Code',
-    user: {
-      nvisionId: "nvision150301",
-      name: "Goutham Veeramachaneni"
-    }
+    user: req.user
   });
 });
 
